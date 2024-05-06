@@ -24,6 +24,8 @@ router = routers.DefaultRouter()
 router.register(r'companies', CompanyViewSet)
 router.register(r'clients', ClientViewSet)
 
+# This code snippet is configuring the URL patterns for the Django project. Here's what each part
+# does:
 urlpatterns = [
     path('api/v1/', include(router.urls)),
     path('admin/', admin.site.urls),
